@@ -1,0 +1,60 @@
+%% LaTeX的注释就是‘%’
+%  采用的环境是MikiTeX+xelatex,编辑器是vscode,Microsoft一个开源编辑器，功能比较强大
+%  LaTeX 主要用来排版论文、书籍、海报还有信件等等
+%  LaTeX文档的结构
+\documentclass[utf8,a4paper,12pt]{ctexart}
+\usepackage[left=2.50cm,right=2.50cm,top=2cm,bottom=2cm]{geometry}
+%% 美国数学学会包
+\usepackage{amssymb,amsfonts,amsmath,amsthm}
+\usepackage{graphics}
+\usepackage{tikz}
+\title{\LaTeX 学习}
+\author{李宁}
+\date{}
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \begin{abstract}
+        这是一个摘要，这是一个摘要，这是一个摘要，这是一个摘要，这是一个摘要，这是一个摘要，这是一个摘要，这是一个摘要，这是一个摘要，这是一个摘要。
+    \end{abstract}
+    \section{引言}
+    \LaTeX 是一个比较好用的排版平台，但是入门比较困难，相比较word而言，但是排版比较大的文件，不会死机，并且可以多人分工合作，采用一样的模板，主要用在数学、物理教材可以用。作图可以用figure这个包，把文件路径引进来就可以了。
+
+    \LaTeX 的入门相对困难一些，这个系统平台的安装包也比较大，一般接近3G的大小。百度搜索CTex，中科院的有个博士论文包，可以参考学习。
+
+    可以排版优美的数学公式。
+    \section{数学公式的排版}
+    数学公式的排版，我们要掌握latex语言，比较繁琐，不过可以mathtype导出TeX代码，也可以手写图片，采用mathpix snipping tools,识别率到90\%。
+
+    数学公式分为二种，一种叫做行内公式，$v=v_0+at$，还有一种叫做块状公式，
+    \[
+        x=v_0 t+\frac{1}{2} at^2   
+    \]
+    带编号的公式
+    \begin{equation}%%% equation环境，可以自动编号
+        \nabla \cdot E =\frac{\rho_0}{\varepsilon_0}
+    \end{equation}
+    多个公式采用一个编号
+    \begin{equation}
+        \begin{split}
+            \nabla \cdot E &=\frac{\rho_0}{\varepsilon_0}\\
+            \nabla \times E&=0  ~~~~    \text{麦克斯韦方程组}
+        \end{split}
+    \end{equation}
+    测试一下
+    \section{图片的制作}
+    \subsection{figure包下的图片引入}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.3\textwidth]{0013451.png}
+        \caption{摩擦角}
+        \label{fraction}
+    \end{figure}
+    根据图(\ref{fraction}),图片引入方式，这是位图，也可以pdf，也可以是eps。
+    \subsection{tikz图片的生成}
+    \begin{tikzpicture}
+        \draw (0,0) circle (3cm);
+        \draw (6,0) rectangle (12,2);
+    \end{tikzpicture}
+    推荐学习的网站LaTeX Studio,这个网站有很多教程，也有很多模板，tikz网站也有很多模板，自己尝试着去改。
+\end{document}
