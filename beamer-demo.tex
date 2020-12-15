@@ -1,0 +1,160 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usefonttheme{professionalfonts}  % 数学公式字体
+\newcommand{\onech}[4]{
+\renewcommand\arraystretch{1.4}
+\begin{tabularx}{\linewidth}{XXXX}
+\setlength\tabcolsep{0pt}
+A\,．#1 & B\,．#2 & C\,．#3 & D\,．#4 \\
+\end{tabularx}
+\unskip \unskip}
+\newcommand{\twoch}[4]{
+\renewcommand\arraystretch{1.4}
+\begin{tabularx}{\linewidth}{XX}
+\setlength\tabcolsep{0pt}
+A\,．#1 & B\,．#2 \\
+C\,．#3 & D\,．#4
+\end{tabularx}
+\unskip \unskip}
+\newcommand{\fourch}[4]{
+\renewcommand\arraystretch{1.4}
+\begin{tabularx}{\linewidth}{X}
+\setlength\tabcolsep{0pt}
+A\,．#1 \\
+B\,．#2 \\
+C\,．#3 \\
+D\,．#4 \\
+\end{tabularx}
+\unskip \unskip}
+
+%Information to be included in the title page:
+\title{强基计划专题精编讲座}
+\author{李宁}
+\institute{山东省青岛第五十八中学}
+
+
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{质点和质点系的直线运动}
+一、匀变速直线运动
+
+1.基本公式
+
+\begin{equation}
+    v_t=v_0+at,\,s=v_0 t+\frac{1}{2}at^2
+\end{equation}
+
+利用匀变速直线运动规律求解运动学问题，在熟悉题意的基础上，首先要分清物体的运动过程及各过程的运动性质，要注意每一个过程加速度必须恒定。找出各过程的共同点及两过程的转折点的速度，再根据已知量和待求量选择合适的规律、公式求解。
+\end{frame}
+\begin{frame}
+    \frametitle{质点和质点系的直线运动}
+    一、匀变速直线运动
+    
+    2.运动问题中的小量分析
+    
+    空间、时间都是连续性的量，连续量的处理常常需涉及对小量的处理，因此对运动问题的讨论离不开小量运算，例如速度、加速度表示为：
+    \begin{equation}
+        v=\lim_{\Delta t\to 0} \frac{\Delta x}{\Delta t},\,\,a=\lim_{\Delta t\to 0}\frac{\Delta v}{\Delta t}
+    \end{equation}
+
+    涉及的均是小量的除法。利用初等数学并结合简单的小量极限概念来实现对相关问题的分析。
+    \end{frame}
+    \begin{frame}
+        \frametitle{质点和质点系的直线运动}
+        一、匀变速直线运动
+        
+        2.相对运动
+        
+        研究物体的机械运动，首先要选择一个参照物（或坐标系），物体的运动都是相对于这个参照物的位置发生变化的。由于选择的参照物不同，对同一物体的运动的描述可以不同。例如从匀速飞行的飞机上落下一个物体$A$，站在地面上的观察者看到物体是运动的，是以与地面静止的物体为参照物，故物体$A$做平抛运动，其轨迹是抛物线；而由飞机上的观察者看物体的运动，是以飞机为参照物，故物体$A$做自由落体运动，轨迹是一条直线。
+
+        运动的合成包括位移、速度和加速度的合成。其基本原则遵循平行四边形法则，如$\vec v_{\text{A对B}}=\vec v_{\text{A对C}}+\vec v_{\text{C对B}}$
+    \end{frame}
+    \begin{frame}
+        \frametitle{物系相关速度}
+        所谓物系相关速度是指不同物体之间或同一物体的不同部分之间的速度有一定的联系，善于找到这类联系，可以为顺利解题奠定基础。我们一般会碰到以下两类问题：
+
+        1.求由杆或绳约束物系的各点速度
+
+        杆或绳约束物系各点速度的相关特征是：在同一时刻必具有相同的沿杆、绳方向的分速度。因此解题时可以先确定所研究各点的实际速度，再将该速度沿杆、绳方向和垂直杆、绳方向进行分解。
+
+        
+    \end{frame}
+    \begin{frame}
+        \frametitle{物系相关速度}
+    
+        2.求接触物系接触点的速度
+
+        由刚体的力学性质及“接触”的约束性可知，沿接触面法线方向，接触双方必须具有相同的法向分速度，否则将分离或形变，违反接触或刚体上的限制。至于沿接触面的切向是否有相同的分速度，则取决于该方向上双方有无相对滑动，若无相对滑动，则接触双方将具有完全相同的速度。因此，接触物系接触点速度的相关特征是：沿接触面法向的分速度必定相同，沿接触面切向的分速度再无相对滑动时也相同。
+    
+    \end{frame}
+    \begin{frame}[t]
+        \frametitle{例题讲解}
+        蚂蚁离开巢沿直线爬行，它的速度与到蚁巢中心的距离成反比.当蚂蚁爬到距巢中心$l_1 
+        =1m$的$A$点处时，速度是$\upsilon _1 
+        =0.02m/s$.试求蚂蚁继续由$A$点爬到距巢中心$l_2 
+        =2m$的$B$点需要多长的时间$t$？
+        
+    
+    \end{frame}
+    \begin{frame}[t]
+        \frametitle{例题讲解}
+        某人以$2.5\text{m/s}$的速度向正西方向跑时，感到风来自正北.如他将速度增加一倍，则感到风从正西北方向吹来.求风速大小.
+        
+    
+    \end{frame}
+    \begin{frame}[t]
+        \frametitle{例题讲解}
+        （2013年复旦）质点做直线运动，在$0\leq t\leq T$时间段内瞬时速度为$v=v_0\sqrt{1-(\frac{t}{T})^2}$，其平均速度为
+
+        \onech{$v_0$}{$\dfrac{v_0}{2}$}{$\dfrac{\pi v_0}{4}$}{$\dfrac{\sqrt{3}v_0}{2}$}
+        
+    
+    \end{frame}
+    \begin{frame}[t]
+        \frametitle{例题讲解}
+        (2017年清华领军)一颗子弹以水平速度$v_0$穿透一块在光滑水平面上迎面滑来的木块后，两者运动方向均不变。设子弹与木块间的相互作用力恒定，木块最后的速度
+        为$v$，则
+        
+        \twoch{$v_0$越大，$v$越大}{$v_0$越小，$v$越大}{子弹质量越大，$v$越大}{木块质量越小，$v$越大}
+        
+    
+    \end{frame}
+    \begin{frame}[t]
+        \frametitle{例题讲解}
+    
+        (2016年清华领军)从地面以速度$v_0$竖直向上抛出一小球，与此同时，在该小球上抛能达到的最高处有另外一个小球以速度$v_0$被竖直向下抛出。忽略空气阻力，则两球相遇时速度之比为多少？
+    
+    \end{frame}
+    \begin{frame}[t]
+        \frametitle{例题讲解}
+    从楼顶边缘以大小为$v_0$的初速度竖直上抛一小球，经过$t_0$时间后在楼顶边缘从静止开始释放另一小球。若要求两小球同时落地，忽略空气阻力，则$v_0$的取值范围和抛出点的高度应为
+
+    \fourch{$\dfrac{1}{2}gt_0<v_0<gt_0, ~~h=\frac{1}{2}gt_0^2\left(\frac{v_0-gt_0}{v_0-\frac{1}{2}gt_0}\right)^2$}{$v_0\neq gt_0,h=\frac{1}{2}gt_0^2\left(\frac{v_0-\frac{1}{2}gt_0}{v_0-gt_0}\right)^2$}{$\dfrac{1}{2}gt_0<v_0<gt_0,h=\frac{1}{2}gt_0^2\left(\frac{v_0-\frac{1}{2}gt_0}{v_0-gt_0}\right)^2$}{$v_0\neq gt_0,h=\frac{1}{2}gt_0^2\left(\frac{v_0-gt_0}{v_0-\frac{1}{2}gt_0}\right)^2$}
+        
+    
+    \end{frame}
+    \begin{frame}
+        \frametitle{专题二：共点力物体的平衡}
+    
+        1.物体的重心
+
+        物体的重心是物体各部分所受重力的合力的作用点。均匀物体的重心在它的几何中心上。由此可见，物体的重心有可能不在物体上，而在它附近空间中的某一个点上。只要物体的物质分布情况确定，物体的重心与物体各部分的相对位置就确定了。
+
+        设物体各部分的质量分别为$m_1$，$m_2$，$\cdots$，$m_n$，且各部分重力的作用点在$Oxy$坐标系中的坐标分别是$(x_1,y_1)$，$(x_2,y_2)$，$\cdots$，$\left(x_n,y_n\right)$ ，则物体重心坐标为
+        \begin{equation}
+            \begin{split}
+                x_c=\frac{\sum m_i x_i}{\sum m_i}=\frac{m_1 x_1+m_2x_2+\cdots+m_n x_n}{m_1+m_2\cdots+m_n}\\
+                y_c=\frac{\sum m_i y_i}{\sum m_i}=\frac{m_1 y_1+m_2y_2+\cdots+m_n y_n}{m_1+m_2\cdots+m_n}
+            \end{split}           
+        \end{equation}   
+    \end{frame}
+\end{document}
